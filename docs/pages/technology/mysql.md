@@ -174,8 +174,8 @@ mysql可视化工具，[下载](https://www.heidisql.com/download.php?download=i
 原因8.0mysql引入了caching_sha2_password模块作为默认身份验证插件，nodejs还没有跟进
 解决办法：
 启用mysql之后运行
-
-`ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '你的密码'`
+`ALTER USER 'root'@'localhost' IDENTIFIED BY 'password' PASSWORD EXPIRE NEVER;`
+`ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '你的新密码'`
 
 再运行
 
@@ -212,4 +212,8 @@ FROM table_name
 [WHERE Clause]
 [LIMIT N][ OFFSET M]
 ```
+
+### 本机mysql和phpstudy自带的mysql冲突问题
+1. phpstudy->其他选项菜单->mysql工具->打开数据库目录(打开phpstudy自带mysql的文件夹)
+2. 用本机mysql文件替换到phpstudy自带mysql中的文件，然后两都就可以共存了
 >引用：[菜鸟教程](https://www.runoob.com/mysql/mysql-tutorial.html)

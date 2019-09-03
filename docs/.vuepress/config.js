@@ -1,5 +1,5 @@
 module.exports = {
-    title: '技术总结',
+    title: '',
     head: [
         ['link', { rel: 'icon', href: `/logo.png` }]
     ],
