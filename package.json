@@ -161,7 +161,7 @@
     "de-indent": "^1.0.2",
     "debug": "^2.6.9",
     "decamelize": "^1.2.0",
-    "decode-uri-component": "^0.2.0",
+    "decode-uri-component": "^0.2.1",
     "deep-equal": "^1.0.1",
     "deepmerge": "^1.5.2",
     "default-gateway": "^4.2.0",
